@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<style type = "text/css">
+	
+		th, td 
+		{
+			padding: 15px;
+		}
+		
+		#menu li {
+			padding: 0px 50px 0px 50px;
+			font-weight: bold;
+			font-color: white;
+		}
+		body
+		{
+			background-color: #e0e0d1;
+		}
+	
+	</style>
+</head>
+
+<body onload = "home();">
+<script src= "main.js"></script>
+<div class="container">
+
+	
+	
+	<div class = "row">
+	<div class = "col-sm-2">
+	</div>
+	<div class = "col-sm-8">
+	<form NAME = "login" action = "" method = "post" class="form-horizontal">
+
+		<h3 align = "center">   <div id="userName"></div></h3> 
+		<h3 align = "center">  <div id="recipe"></div></h3> 
+		<div class = "form-group">
+			<!--<label for = "emailField" class = "col-xs-2"> Email: </label>
+			<div class = "col-xs-10">
+				<input type = "text" name = "email" id = "email" class = "form-control">
+			</div>
+		</div>
+		<div class = "form-group">
+			<label for = "nameField" class = "col-xs-2"> Password: </label>
+			<div class = "col-xs-10">
+				<input type = "password" name = "password" id = "password" class = "form-control">
+			</div>
+		</div>		
+		<div align = "right" class="col-xs-12">
+			
+            
+            <div align = "right" class="col-xs-12">
+            <input type="button" id = "btn" name = "submit" class="btn btn-primary" value = "submit" 
+            onclick = "loginFunc(document.getElementById('email').value, document.getElementById('password').value)"> 
+            <a href="index.html" class="btn btn-default">Cancel</a>
+
+        </div>
+        </div>-->
+	</form>	
+	</div>
+	<div class = "col-sm-2">
+	</div>
+	</div>
+	
+	
+</div>
+<div id = "info" ></div>
+</body>
+
+</html>

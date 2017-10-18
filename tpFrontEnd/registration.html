@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style type = "text/css">
+	
+		th, td 
+		{
+			padding: 15px;
+		}
+		
+		#menu li {
+			padding: 0px 50px 0px 50px;
+			font-weight: bold;
+			font-color: white;
+		}
+		
+		h4 {
+			color: #000000;
+		}
+		
+		h3 {
+			color: #000000;
+		}
+		
+		body
+		{
+			background-color: #e0e0d1;
+		}
+	
+	</style>
+	
+</head>
+
+<body>
+<script src= "main.js"></script>
+<div class="container">
+
+	
+	
+	<div class = "row">
+	<div class = "col-sm-2">
+	</div>
+	<div class = "col-sm-8">
+	<form NAME = "registration" action = "" method = "post" class="form-horizontal">
+		<h2 align = "center"> Registration </h2>
+		<div class = "form-group">
+			<label for = "nameField" class = "col-xs-2"> Username: </label>
+			<div class = "col-xs-10">
+				<input type = "text" name = "userName" id = "userName" class="form-control">
+			</div>
+		</div>
+		<div class = "form-group">
+			<label for = "emailField" class = "col-xs-2"> Email: </label>
+			<div class = "col-xs-10">
+				<input type = "text" name = "email" id = "email" class="form-control" >
+			</div>
+		</div>	
+		
+		<div class = "form-group">
+			<label for = "nameField" class = "col-xs-2"> Password: </label>
+			<div class = "col-xs-10">
+				<input type = "password" name = "password" id = "password" class="form-control">
+			</div>
+		</div>
+		<!--<div class = "form-group">
+			<label for = "nameField" class = "col-xs-2"> Confirm Password: </label>
+			<div class = "col-xs-10">
+				<input type = "password" name = "password2" class="form-control">
+			</div>
+		</div>-->
+		<div align = "right" class="col-xs-12">
+            <input type="button" name = "register" class="btn btn-primary"  VALUE ="Register" onclick = "registerViewerFunc(document.getElementById('userName').value, document.getElementById('email').value, document.getElementById('password').value)"> 
+            <a href="index.html" class="btn btn-default">Cancel</a>
+        </div>
+	</form>	
+	</div>
+	<div class = "col-sm-2">
+	</div>
+	</div>
+	
+	
+</div>	
+</body>
+
+</html>
